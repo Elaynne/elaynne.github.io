@@ -1,3 +1,5 @@
+@import "devicons";
+
 body {
 	color:#444;
 	font:normal 16px "Raleway","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -265,6 +267,10 @@ img {
 .panel-group .panel {
 	border-radius: 0;
 }
+/*====icons==================================================*/
+i, i.devicons, i.fa{
+	font-size: 50px;
+}
 /*	Form	==================================================*/
 label {
 	font-weight:300;
@@ -379,7 +385,8 @@ label {
 	width:100%;
 	top:0;
 	position:fixed;
-	background-image:url(http://unsplash.it/1600/600?random=1);
+	background-image: url("/assets/img/office.jpg");
+	//url(http://unsplash.it/1600/600?random=1);
 	background-position:center center;
 	background-repeat:no-repeat;
 	-webkit-background-size: cover;
@@ -432,6 +439,11 @@ label {
 }
 #hero .herotext {
 	padding:160px 0px;
+	/*margin-left: 600px;*/
+}
+#hero .mybg {
+	background-color: rgba(0, 0, 0, 0.4);
+	padding: 15px;
 }
 #hero h1 {
 	font-size:50px;
@@ -475,7 +487,7 @@ label {
 	margin-bottom: 29px;
 }
 
-/*	Gallery	==================================================*/ 
+/*	Gallery	==================================================*/
 
 #gallery img {
 	width:100%;
@@ -514,15 +526,15 @@ label {
 #gallery a.btn {
 	display:inline-block;
 }
-/*	Faq==================================================*/ 
+/*	Faq==================================================*/
 #faq {
 	background-color:#F9FAFD;
 }
 .faq-block {
 	margin:0px;
 }
-/*	Slider	==================================================*/ 
-#slider {	
+/*	Slider	==================================================*/
+#slider {
 	color:#FFF;
 }
 .carousel-control.left,.carousel-control.right {
@@ -599,7 +611,7 @@ label {
 		height:40px;
 	width:40px;
 }
-/*	Contact Area	==================================================*/ 
+/*	Contact Area	==================================================*/
 #contactarea {
 	text-align:center;
 }
@@ -689,7 +701,7 @@ label {
 .footer ul.social-icons li a {
 	color:#666;
 }
-.contactalert {  
+.contactalert {
 	margin-top: 20px;
 	border: 1px solid;
 	display: inline-block;
@@ -1123,11 +1135,11 @@ img.mfp-img {
 	right:0;
 	padding-top:0;
 }
-/*	Common	==================================================*/ 
-.section {	
-	
+/*	Common	==================================================*/
+.section {
+
 }
-.wrapsection {  
+.wrapsection {
     padding-top:140px;
 	padding-bottom:140px;
     position: relative;
@@ -1145,7 +1157,7 @@ img.mfp-img {
 	background-attachment: fixed;
 	background-size: cover;
 	overflow: hidden;
-	z-index: 1;	
+	z-index: 1;
 	color:#fff;
 }
 .parallax-overlay {
@@ -1156,7 +1168,7 @@ img.mfp-img {
 	left: 0;
 	z-index: 2;
 }
-/*	Responsive	==================================================*/ 
+/*	Responsive	==================================================*/
 @media (max-width:991px) {
 	.service-box {
 					margin-bottom:30px;
@@ -1164,7 +1176,7 @@ img.mfp-img {
 	#image img.img-responsive {
 					margin-left:auto;
 					margin-right:auto;
-	}	
+	}
 	.navbar-nav>li>a {
 					margin:0 7px;
 	}
@@ -1185,7 +1197,7 @@ img.mfp-img {
 					max-width:690px;
 					padding-left:30px;
 					padding-right:30px;
-	}	
+	}
 	.navbar-nav>li>a {
 					padding:10px;
 	}
@@ -1238,7 +1250,7 @@ img.mfp-img {
 					max-width:690px;
 					padding-left:30px;
 					padding-right:30px;
-	}	
+	}
 }
 @media (max-width:490px) {
 	.wow {
@@ -1259,7 +1271,7 @@ img.mfp-img {
 	}
 	#hero p.lead {
 					font-size:1.5em;
-	}	
+	}
 	.faq-block {
 					margin: 0;
 	}
