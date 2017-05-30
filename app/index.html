@@ -34,8 +34,9 @@
 </head>
 <body>
 <!-- Begin Hero Bg -->
-<div id="parallax">
-</div>
+<video autoplay="true" loop class="intro-video" id="parallax">
+	  <source src="/assets/videos/intrositeloop.mp4" type="video/mp4">
+</video>
 <!-- End Hero Bg
 	================================================== -->
 <!-- Start Header
@@ -50,18 +51,22 @@
 		<span class="icon-bar"></span> -->
 		</button>
 		<!-- Your Logo -->
-		<a href="#hero" class="navbar-brand">ELAYNNE TORRES <span class="lighter">personal website</span></a>
+		<a href="#hero" class="navbar-brand">ELAYNNE<span class="lighter"> TORRES</span></a>
 
-		<span class="social wow zoomIn">
-			<a target="_blank" href="https://www.facebook.com/elaynne.torres">
-				<i #header-social class="fa fa-facebook"></i></a>
-			<i #header-social class="fa fa-skype"></i>
-			<a target="_blank" href="https://www.linkedin.com/in/elaynne-torres-888606104/">
-				<i #header-social class="fa fa-linkedin"></i></a>
-			<a target="_blank" href="https://github.com/Elaynne">
-				<i #header-social class="fa fa-github-alt"></i></a>
-		</span>
 
+	</div>
+
+
+	<div class="social navbar-brand">
+		<a target="_blank" href="https://www.facebook.com/elaynne.torres">
+			<i class="fa fa-facebook"></i>
+		</a>
+		<a target="_blank" href="https://www.linkedin.com/in/elaynne-torres-888606104/">
+			<i class="fa fa-linkedin"></i>
+		</a>
+		<a target="_blank" href="https://github.com/Elaynne">
+			<i class="fa fa-github-alt"></i>
+		</a>
 	</div>
 	<!-- Start Navigation -->
 	<nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
@@ -70,7 +75,10 @@
 		<a href="#hero">Home</a>
 		</li>
 		<li>
-		<a href="#about">Skills</a>
+		<a href="#about">About</a>
+		</li>
+		<li>
+		<a href="#skills">Skills</a>
 		</li>
 		<li>
 		<a href="#portfolio">Portfolio</a>
@@ -80,6 +88,9 @@
 		</li>
 		<li>
 		<a href="#faq">Education</a>
+		</li>
+		<li>
+		<a href="#resume">Resume</a>
 		</li>
 		<li>
 		<a href="#contactarea">Contact</a>
@@ -94,16 +105,13 @@
 <section id="hero" class="section">
 <div class="container">
 	<div class="row">
-		<div class="col-md-8">
+		<div class="col-md-6" style="margim-top: 20px;">
 			<div class="herotext">
 				<div class="mybg lead wow zoomIn"  data-wow-duration="1.5s" data-wow-delay="0.3s">
-					<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">ELAYNNE <span class="lighter">TORRES</span></h1>
-					<p class="lead wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s" style="font-size: 24px">
-						Game and Web Developer.
-						I'm a Brazilian developer who wants to solve population problems through technology. I am interested in artificial intelligence, IoT, play and develop games. I also research on how to turn educational games into fun games, and I became interested in computing when I first heard about Blizzard.
-					</p>
-					<p>
-						<a href="#" class="btn btn-default btn-lg wow fadeInRight" role="button">Find a Cause</a>
+					<h1 class="wow bounceInDown" data-wow-duration="1s" data-wow-delay="0.1s">Elaynne <span class="lighter">Torres</span></h1>
+					<p class="lead wow zoomIn" data-wow-duration="1.5s" data-wow-delay="0.3s" style="font-size: 40px">
+						Game and Web Developer
+						<a href="#skills" class="btn btn-default btn-lg wow fadeInLeft" role="button">Let's go!</a>
 					</p>
 			</div>
 
@@ -112,9 +120,9 @@
 	</div>
 </div>
 </section>
-<!-- About
+<!-- skills
 	================================================== -->
-<section id="about" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
+<section id="skills" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/1.jpg);">
 <div class="wrapsection">
 	<div class="parallax-overlay" style="background-color: #3498db;opacity:0.9;"></div>
 	<div class="container">
@@ -138,6 +146,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.1s">
 					<h3>Programing languages</h3>
@@ -148,8 +157,8 @@
 						<i class="fa fa-css3" aria-hidden="true" title="CSS"></i>
 						<i class="devicons devicons-jquery" title="JQUERY"></i>
 						<i class="devicons devicons-mysql" title="MYSQL"></i>
-						<i class="fa fa-linux" title="LINUX"></i>
-						<i class="devicons devicons-ubuntu" title="UBUNTU"></i>
+						<!-- <i class="fa fa-linux" title="LINUX"></i>
+						<i class="devicons devicons-ubuntu" title="UBUNTU"></i> -->
 			</div>
 		</div>
 
@@ -169,39 +178,46 @@
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
 					<h3>Version Control</h3>
-					<i class="devicons devicons-git" title="GIT"></i>
-					<i class="fa fa-github" title="GITHUB"></i>
-					<i class="fa fa-bitbucket" title="BITBUCKET"></i>
-					<i class="devicon-sourcetree-plain" title="SOURCETREE"></i>
+					<div style="padding: 7px;">
+						<i class="devicons devicons-git" title="GIT"></i>
+						<i class="fa fa-github" title="GITHUB"></i>
+						<i class="fa fa-bitbucket" title="BITBUCKET"></i>
+						<i class="devicon-sourcetree-plain" title="SOURCETREE"></i>
+					</div>
 				</div>
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="service-box wow flipInY" data-wow-duration="1.5s" data-wow-delay="0.3s">
 					<h3>Language</h3>
-					<div>
+					<div style="padding: 9px;">
 						<p>Portuguese Native and English Advanced</p>
 					</div>
 				</div>
 			</div>
-
+			<div class="col-md-12" style="text-align:center; font-size: 30px;">
+				<a style="color: rgb(224, 232, 237);" target="_blank" href="/assets/downloads/elaynnetorresCV.pdf" title="curriculum vitae">
+					<i class="glyphicon glyphicon glyphicon-print"></i>
+				</a>
+		 </div>
 		</div>
 	</div>
 </div>
 </section>
 <!-- Random
 	================================================== -->
-<section class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/3.jpg);">
+<section id="about" class="parallax section" style="background-image: url(/assets/img/woman-typing.jpg);">
 	<div class="wrapsection">
 	<div class="parallax-overlay"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 sol-sm-12">
-				<div class="maintitle">
-					<h3 class="section-title justtitle">Participation is everything</h3>
+				<div class="maintitle" style="background-color: rgba(54, 52, 52, 0.49); padding: 10px;">
+					<h3 class="section-title justtitle">About me</h3>
 					<p class="lead bottom0 wow bounceInUp">
-						Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
+						Hi, I'm a brazilian developer interested in artificial intelligence, IoT, play and develop games. I also research on how to turn educational games into fun games, and I became interested in computing when I first heard about Blizzard when I was a child.
 					</p>
 				</div>
+				<!-- <img src="/assets/img/meprofile.jpg" style="transform: scale(0.3);"> -->
 			</div>
 		</div>
 	</div>
@@ -224,52 +240,45 @@
 			</div>
 
 			<div class="col-md-4">
-				<a href="/assets/img/telamenu.jpg" title="This is the">
-					<!-- <img src="https://ununsplash.imgix.net/photo-1429277158984-614d155e0017?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive"> -->
-					<img src="/assets/img/telamenu.jpg">
-					<div class="description">
-						<span class="caption">Calculo de <b>Aventura</b></span>
-						<span class="camera"><i class="fa fa-gamepad"></i></span>
-						<div class="clearfix"></div>
-					</div>
+				<a target="_blank" href="/calculodeaventura" style="margin: auto;">
+					<img src="/assets/img/telamenu.jpg" class="image-responsive">
+					<a class="description" data-toggle="collapse"  href="#collapse1">
+							<span class="caption">Calculo de <b>Aventura</b></span>
+							<span class="camera"><i class="fa fa-gamepad"></i></span>
+							<div id="collapse1" class=" collapse " style="background:white; color:#444; margin: auto; padding: 15px;">
+									<p>This game uses RPG as a way to bring fun in math class by unifying the educational context to the ludic context. It also uses voice commands through isolated word recognition technology through Convolutional Neural Networks.</p>
+									<p><b>Story:</b> You were in class and you fell asleep. When he roped, he was in a world destroyed by dragons and all you want is to go home. For this you will have to defeat the Thyme dragon controlled by the Master of the Calculations and collect the stones of intelligence in each world.</p>
+							</div>
+					</a>
 				</a>
 				<iframe width="360" height="200" src="https://www.youtube.com/embed/M9KIXlCUehA" frameborder="0" allowfullscreen></iframe>
 			</div>
 
-			<div class="col-md-8">
-					<div class="description-proj" style="background-image: url(/assets/img/homewallpaper.jpg);">
-						<span class="caption" >About<b> the game</b></span>
-						<p>This game uses RPG as a way to bring fun in math class by unifying the educational context to the ludic context. It also uses voice commands through isolated word recognition technology through Convolutional Neural Networks.</p>
-						<p><b>Story:</b> You were in class and you fell asleep. When he roped, he was in a world destroyed by dragons and all you want is to go home. For this you will have to defeat the Thyme dragon controlled by the Master of the Calculations and collect the stones of intelligence in each world.</p>
-
-						<span class="camera"><i class="glyphicon glyphicon-download-alt"></i></i></span>
-
-					</div>
-				</a>
-			</div>
-
 			<div class="col-md-4">
-				<a target="_blank" href="http://www.ludsgame.com.br/">
+				<a target="_blank" href="http://www.ludsgame.com.br/" style="margin: auto;">
 				<!-- <img src="https://ununsplash.imgix.net/photo-1429277096327-11ee3b761c93?fit=crop&amp;fm=jpg&amp;h=700&amp;q=75&amp;w=1050" alt="" class="image-responsive"> -->
 				<img src="/assets/img/ludsgame.jpg" alt="" class="image-responsive">
-				<div class="description">
+				<a class="description" data-toggle="collapse"  href="#collapse2">
 					<span class="caption">Vale das <b>Maçãs</b></span>
 					<span class="camera"><i class="fa fa-gamepad"></i>
-						<i class="glyphicon glyphicon-new-window"></i></span>
-					<div class="clearfix"></div>
-				</div>
+					<div id="collapse2" class=" collapse " style="background:white; color:#444; margin: auto; padding: 15px;">
+							<p>This game is aimed at the aid in the treatment of the physiotherapy of children and people whom they reject the conventional method. The commands are performed through the capture of gestures by kinect.</p>
+					</div>
+				</a>
 				</a>
 				<iframe width="360" height="200" src="https://www.youtube.com/embed/RuYMAX_izvc" frameborder="0" allowfullscreen></iframe>
 			</div>
 
-			<div class="col-md-8">
-				<a href="/assets/img/homewallpaper.jpg" title="This is the">
-				<img src="/assets/img/homewallpaper.jpg" alt="" class="image-responsive">
-					<div class="description">
-						<span class="caption">PLACE<b>HOLDER</b></span>
-						<span class="camera"><i class="fa fa-gamepad"></i></span>
-						<div class="clearfix"></div>
-					</div>
+			<div class="col-md-4">
+				<a target="_blank" href="#" style="margin: auto;">
+					<img src="/assets/img/mysite.png" class="image-responsive">
+					<a class="description" data-toggle="collapse"  href="#collapse3">
+							<span class="caption">My <b>website</b></span>
+							<span class="camera"><i class="fa fa-desktop" style="margin-left: 10px;"></i></span>
+							<div id="collapse3" class=" collapse " style="background:white; color:#444; margin: auto; padding: 15px;">
+									<p>This is my web portfolio that you are now :D</p>
+							</div>
+					</a>
 				</a>
 			</div>
 
@@ -342,7 +351,9 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="row">
+
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0s">
 					<div class="panel-group">
@@ -350,7 +361,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-								Computer Science UFS 2013 - 2017</a>
+								Computer Science UFS 2013 - 2017 (unfinished)	</a>
 								</h4>
 							</div>
 							<div id="collapseOne" class="panel-collapse collapse">
@@ -388,6 +399,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.1s">
 					<div class="panel-group">
@@ -418,22 +430,11 @@
 								</div>
 							</div>
 						</div>
-						<!-- <div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
-								</a>
-								</h4>
-							</div>
-							<div id="collapseSix" class="panel-collapse collapse">
-								<div class="panel-body">
 
-								</div>
-							</div>
-						</div> -->
 					</div>
 				</div>
 			</div>
+
 			<div class="col-md-4 col-sm-12">
 				<div class="faq-block wow bounceInDown" data-wow-duration="1.5s" data-wow-delay="0.2s">
 					<div class="panel-group">
@@ -441,7 +442,7 @@
 							<div class="panel-heading">
 								<h4 class="panel-title">
 								<a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
-								Materials Science and Engineering UFS 2009 - 2012</a>
+								Materials Science and Engineering UFS 2009 - 2012 (unfinished)</a>
 								</h4>
 							</div>
 							<div id="collapseSeven" class="panel-collapse collapse">
@@ -463,56 +464,235 @@
 								</div>
 							</div>
 						</div>
-					<!-- 	<div class="panel panel-default">
-							<div class="panel-heading">
-								<h4 class="panel-title">
-								<a data-toggle="collapse" data-parent="#accordion" href="#collapseNine">
-								Do I have to pay a tax? </a>
-								</h4>
-							</div>
-							<div id="collapseNine" class="panel-collapse collapse">
-								<div class="panel-body">
-									 Tax. This is the detailed answer. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-								</div>
-							</div>
-						</div>
-					</div> -->
+
 				</div>
 			</div>
-		</div>
+			</div>
 	</div>
+
 </div>
 </section>
 <!-- Random
 	================================================== -->
-<section class="whitecolor parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/5.jpg);">
+<section id="resume" class="whitecolor parallax section" style="background-image: url(/assets/img/pexels-photo-1.jpeg);">
 <div class="wrapsection">
 	<div class="container">
 	<div class="row">
 		<div class="col-md-12 sol-sm-12">
 			<div class="maintitle">
-				<h3 class="section-title justtitle">Charity <span class="wow flipInX">&amp; love</span> are the same</h3>
-				<p class="lead bottom0">
-					 Fusce fermentum lectus id turpis suscipit, ut egestas magna volutpat. Donec a purus tellus. Nunc ut dolor eu est gravida auctor quis vitae.
-				</p>
+				<h3 class="section-title justtitle">Resume of my path...<span class="wow flipInX"></span></h3>
+				<!-- <p class="lead bottom0">
+					 A full view of my path..
+				</p> -->
 			</div>
 		</div>
 	</div>
 	</div>
+	<!-- time line -->
+	<div class="container">
+				<div class="row">
+				<div class="col-md-12">
+					<div style="display:inline-block;width:100%;overflow-y:auto;">
+					<ul class="timeline timeline-horizontal">
+						<li class="timeline-item">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2009 March</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-graduation-cap"></i>
+										Joined UFS in Materials Science and Engineering
+									</small></p>
+								</div>
+								<!-- <div class="timeline-body">
+									<p></p>
+								</div> -->
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2012 November</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-search"></i>
+										Published "Análise de falha em ferramenta de penetração de solo utilizada em pás de retroescavadeiras."   and change graduation</small></p>
+								</div>
+								<!-- <div class="timeline-body">
+									<p></p>
+								</div> -->
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge primary"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2013 March</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-graduation-cap"></i>
+										<b></b></small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Start Computer Science in UFS</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2014 November</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-search"></i>
+										Research “Paralelização de rotinas relacionadas ao modelo acústico”</small></p>
+								</div>
+								<!-- <div class="timeline-body">
+									<p></p>
+								</div> -->
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2015 August</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-gamepad"></i>
+										Eurekamob Internship</small></p>
+								</div>
+								<!-- <div class="timeline-body">
+									<p>Mussum oltis porris, paradis. Paisis, filhis, espiritis santis.</p>
+								</div> -->
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2015 November</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-search"></i>
+										Research “Aplicativos com reconhecimento contínuo de fala para a língua portuguesa.”</small></p>
+								</div>
+								<!-- <div class="timeline-body">
+									<p>Mussum ris, paradis. Paisis, filhis, espiritis santis.</p>
+								</div> -->
+							</div>
+						</li>
+
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2016 September</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-search"></i>
+										Paper “Games para mobile com Reconhecimento de Fala em Português, através de Rede Neural Convolucional” SBGames2016</small></p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2016 November</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-desktop"></i>
+										Imagem Empresarial Internship</small></p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge success"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2017 May</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-desktop"></i>
+										CajuHUB Internship</small></p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge warning"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">2017 July</h4>
+									<p><small class="text-muted timeline-myicons"><i class="fa fa-search"></i>
+										Paper “Otimização do algoritmo EM para GMM usando CUDA”</small></p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				</div>
+			</div>
+			<!-- <div class="row">
+				<div class="col-md-12">
+					<div class="page-header">
+						<h1>Timeline</h1>
+					</div>
+					<ul class="timeline">
+						<li class="timeline-item">
+							<div class="timeline-badge"><i class="glyphicon glyphicon-off"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">Mussum ipsum cacilds 1</h4>
+									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">Mussum ipsum cacilds 2</h4>
+									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros gostis.</p>
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">Mussum ipsum cacilds 3</h4>
+									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+									<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+
+								</div>
+							</div>
+						</li>
+						<li class="timeline-item">
+							<div class="timeline-badge"><i class="glyphicon glyphicon-check"></i></div>
+							<div class="timeline-panel">
+								<div class="timeline-heading">
+									<h4 class="timeline-title">Mussum ipsum cacilds 4</h4>
+									<p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+								</div>
+								<div class="timeline-body">
+									<p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div> -->
+		</div>
+
 </div>
 </section>
 <!-- Contact
 	================================================== -->
 <section id="contactarea" class="parallax section" style="background-image: url(http://themepush.com/demo/runcharity/assets/img/map.png);">
 <div class="wrapsection">
-	<div class="parallax-overlay" style="background-color: #1cbb9b;opacity:0.95;"></div>
+	<div class="parallax-overlay" style="background-color: rgba(44, 113, 150, 0.95)"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<div class="maintitle">
 					<h3 class="section-title">Get in Touch</h3>
 					<p class="lead">
-						If you have questions about our events, don't hesitate to send us your message. This is a real working contact form, test it!
+						If you need my skills, send me your message.
 					</p>
 				</div>
 				<form id="contact" name="contact" method="post" class="text-left">
