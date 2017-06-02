@@ -304,8 +304,8 @@ img {
 	color:#16a085;
 }
 .btn-default,.label-default {
-	border-color:#FFF;
-	color:#fff;
+	border-color:black;
+	color:black;
 	background-color:transparent;
 	border-width:2px;
 	padding:15px 20px;
@@ -635,7 +635,7 @@ label {
 	/*margin-left: 600px;*/
 }
 #hero .mybg {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: rgba(255, 255, 255, 0.27);
 	padding: 15px;
 }
 #hero h1 {
@@ -932,8 +932,8 @@ label {
 }
 #credits {
 	padding:30px 0;
-	text-transform:uppercase;
-	font-size:16px;
+	/*text-transform:uppercase;*/
+	font-size:14px;
 	line-height: 1.6;
 }
 #credits a {
