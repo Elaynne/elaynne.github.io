@@ -1,4 +1,6 @@
 @import "devicons";
+@import url("http://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800|Permanent+Marker|VT323|&effect=shadow-multiple|neon|decaying");
+
 
 body {
 	color:#444;
@@ -153,15 +155,15 @@ img {
   width: 46%;
   float: left;
   right: 16px;
-  /*border: 1px solid #c0c0c0;*/
-  background: rgba(91, 192, 222, 0.76);
+  border: 5px solid black;
+  background: rgba(91, 192, 222,1);
   border-radius: 2px;
   padding: 10px;
   -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
 }
-.timeline-myicons{
-	color: white;
+#timeline2 i{
+	color: black;
 }
 .timeline .timeline-item .timeline-panel:before {
   position: absolute;
@@ -176,7 +178,10 @@ img {
 }
 .timeline .timeline-item .timeline-panel .timeline-title {
   margin-top: 0;
-  color: inherit;
+  color: black;
+}
+#timeline2 p{
+	color: black;
 }
 .timeline .timeline-item .timeline-panel .timeline-body > p,
 .timeline .timeline-item .timeline-panel .timeline-body > ul {
@@ -253,6 +258,11 @@ img {
   bottom: 0px;
   left: 43px;
 }
+/*resume*/
+#resume {
+
+}
+
 /*	Section	==================================================*/
 
 .active-section {
@@ -635,7 +645,7 @@ label {
 	/*margin-left: 600px;*/
 }
 #hero .mybg {
-	background-color: rgba(255, 255, 255, 0.27);
+	background-color: rgba(255, 255, 255, 0.51);
 	padding: 15px;
 }
 #hero h1 {
@@ -643,6 +653,8 @@ label {
 }
 #hero p.lead {
 	font-size:1.4em;
+	color: black;
+	filter: opacity(1);
 }
 #hero .btn {
 	font-size:12px;
@@ -749,7 +761,7 @@ label {
 #gallery a.btn {
 	display:inline-block;
 }
-/*	Faq==================================================*/
+/*	Education==================================================*/
 #faq {
 	background-color:#F9FAFD;
 }
