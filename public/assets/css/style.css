@@ -591,7 +591,7 @@ label {
 /* TODO: elaynne alterar essa ãrea */
 #header .navbar-right{width: 60%; text-align: right;}
 #header .navbar-header{width: 20%;}
-#header .social{margin: auto 1% auto 1%; width: 10%;}
+#header .social{width: 30%;}
 #header .navbar-header .navbar-brand{width: 100%;}
 
 @media screen and (min-width:1200px) and (orientation:landscape){
@@ -646,7 +646,7 @@ label {
 }
 #hero .mybg {
 	background-color: rgba(255, 255, 255, 0.51);
-	padding: 15px;
+	padding: 35px;
 }
 #hero h1 {
 	font-size:30px;
@@ -1383,9 +1383,7 @@ img.mfp-img {
 	padding-top:0;
 }
 /*	Common	==================================================*/
-.section {
 
-}
 .wrapsection {
     padding-top:140px;
 	padding-bottom:140px;
@@ -1431,8 +1429,8 @@ img.mfp-img {
 }
 @media (max-width:767px) {
 	.section,.parallax.section .container {
-					padding-top:30px;
-					padding-bottom:30px;
+					/*padding-top:30px;
+					padding-bottom:30px;*/
 	}
 	.service-box,.img-responsive,.carousel {
 					margin-bottom:30px;
@@ -1482,7 +1480,7 @@ img.mfp-img {
 					font-size:18px;
 	}
 	.section {
-					padding:60px 0;
+					/*padding:60px 0;*/
 	}
 	.maintitle p.lead {
 					margin-bottom:40px;
